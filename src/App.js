@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from './Button.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      <div className="container">
+        <div className="hstack">
+          <div className="vstack">
+            <code>&lt;Button &#47;&gt;
+              <br />
+              <Button />
+            </code>
+          </div>
+        </div>
+        <p className="text-muted">Icons:&nbsp;
+          <a
+            href="https://material.io/resources/icons/?style=round"
+            target="_blank"
+            rel="noopener noreferrer"
+          >https://material.io/resources/icons/?style=round</a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p className="text-muted">created by Probo Krishnacahya&nbsp;-&nbsp;
+          <a
+            href="https://devchallenges.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >devChallenges.io</a>
+        </p>
+      </div>
     </div>
   );
 }
